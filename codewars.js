@@ -39,4 +39,15 @@ Example:
 0 => [0]
 */
 
+function digitize(n) {
+    let arr = n.toString().split('').reverse()
+    let newArr = arr.map(num => num * 1)
+    return newArr
+  }
 
+  /* Another Solution 
+
+  function digitize(n) {
+  return n.toString().split("").reverse().map(Number);
+}
+*/

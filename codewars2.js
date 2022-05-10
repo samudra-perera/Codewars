@@ -197,3 +197,17 @@ function toJadenCase(str) {
 }
 
 toJadenCase('My name is samudra Perera')
+
+/*
+Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+
+For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+
+Note: The function accepts an integer and returns an integer
+*/
+
+function squareDigits(num){
+    return num.toString().split('').map(item => (item**2).toString()).join('') * 1
+  }
+squareDigits(9119)
+
